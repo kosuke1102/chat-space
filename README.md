@@ -14,19 +14,21 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user|reference|null: false, index: true|
-|group|reference|null: false, index: true|
+|user|references|null: false, index: true|
+|group|references|null: false, index: true|
+|body|references|null: false, index: true|
+|image|references|null: false, index: true|
+
 
 ### Association
-- has_many :groups_users
-- has_many :group, through: :user_schools
+- belongs_to :groups_users
+- belongs_to :group, through: :groups_users
 
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user|reference|null: false, index: true|
-|message|reference|null: false, index: true|
+|group_id|references|null: false, index: true|
 
 ### Association
-- has_many :groups_users
-- has_many :messages, through: :user_schools
+- has_many :messages
+- has_many :users
