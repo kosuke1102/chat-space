@@ -1,0 +1,26 @@
+$color-side: #FFF;
+$color-sside: #253141;
+$color-group: #2f3e51;
+
+.chat-side{
+  color: $color-side;
+  .side-header{
+    background-color: $color-sside;
+  }
+}
+.groups{
+  background-color: $color-group;
+}
+
+$color-massages: #fafafa;
+$color-form: #ddd;
+$color-submit: #38aef0;
+.messages{
+  background-color: $color-massages;
+}
+.form{
+  background-color: $color-form;
+}
+.submit-btn{
+  background-color: $color-submit;
+}
