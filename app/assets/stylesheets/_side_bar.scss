@@ -2,6 +2,8 @@
   width: 300px;
   float: left;
   
+  
+  
   .side-header{
     height: 100px;
     display: flex;
@@ -15,11 +17,11 @@
     }
     &__box__menu{
       display: flex;
-      font-size: 14px;
     }
     &__box__menu__edit-user{
       margin-left: 0.3rem;
-    }    
+    }
+    .icon {color: white;}
     }
 }
  
@@ -27,6 +29,7 @@
   height: calc(100vh - 100px);
   padding: 20px 20px 0;
   overflow: scroll;
+  
   .group__groups__name{
     font-size: 15px;
     margin-bottom: 5px;
@@ -34,6 +37,13 @@
   }
   .group__latest__message{
     font-size: 11px;
+  }
+
+  .group {
+    a {
+      color: $color-side;
+      text-decoration: none;
+    }
   }
 }
 
