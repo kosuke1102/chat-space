@@ -32,6 +32,7 @@
     &__left-box__member-list__member{
       margin: 0;
       padding: 0;
+      list-style: none;
     }
     &__left-box-btn{
       color: #38aef0;
@@ -59,43 +60,79 @@
     padding: 46px 40px;
     overflow: scroll;
   }
+  .upper-message{
+    display: flex;
+    margin-bottom: 10px;
+    &__date{
+      color: #999999;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+  .lower-message{
+    color: #434a54;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 
   .form{
     height: 90px;
     padding: 20px 40px;
     .new_message{
       display: flex;
+      .form__mask{
+        position: relative;
+        width: 100%;
+        .form__message{
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          color: #434a54;
+          border-style: none;
+        }
+        .form__mask__image{
+          font-size: 1.3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          .hidden{
+            display: none;
+          }
+        }
+      }
+      .form__submit{
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+          }
+      
     }
   }
   
-    .input-box{
-      position: relative;
-      width: 100%;
-      display: flex;
-      &__text{
-        height: 50px;
-        width: 100%;
-        padding: 0 40px 0 10px;
-        color: #434a54;
-        border-style: none;
-      }
-      &__image{
-        font-size: 1.3rem;
-        position: absolute;
-        top: 8px;
-        right: 68px;
-        cursor: pointer;
-      }
-      &__image__file{
-        display: none;
-      }
-}
-    .submit-btn{
-      width: 100px;
-      height: 50px;
-      padding: 0 30px;
-      margin-left: 15px;
-      color: white;
-      cursor: pointer;
-  }
+//     .form__mask{
+//       position: relative;
+//       display: flex;
+//       &__message{
+//         height: 50px;
+//         width: 100%;
+//         padding: 0 40px 0 10px;
+//         color: #434a54;
+//         border-style: none;
+//       }
+//       &__image{
+//         font-size: 1.3rem;
+//         position: absolute;
+//         top: 8px;
+//         right: 68px;
+//         cursor: pointer;
+//         display: none;
+//       }
+
+// }
+//     
 }
