@@ -96,7 +96,7 @@ $('#new_message').on('submit', function(e){
       }
     })
     .fail(function() {
-      alert
+      alert("error")
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
