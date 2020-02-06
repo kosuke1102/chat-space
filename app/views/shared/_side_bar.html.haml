@@ -6,10 +6,10 @@
       %ul.side-header__box__menu
         %li.side-header__box__menu__new-group
           = link_to new_group_path do
-            = icon('fas', 'pen-square' , class: 'icon fa-lg')
+            = icon('fas', 'fa fa-edit' , class: 'icon fa-lg')
         %li.side-header__box__menu__edit-user
           = link_to edit_user_path(current_user) do
-            = icon('fas', 'cog', class: 'icon fa-lg')
+            = icon('fas', 'fa fa-cog', class: 'icon fa-lg')
 
   .groups
     - current_user.groups.each do |group|
@@ -20,3 +20,6 @@
           .group__message
             = group.show_last_message
 
+
+
+-# <i class="fa fa-cog"></i>
